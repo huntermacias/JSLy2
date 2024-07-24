@@ -75,6 +75,7 @@ export default defineAppConfig({
         'nuxt.schema.ts': 'vscode-icons:file-type-nuxt',
         'tailwind.config.js': 'vscode-icons:file-type-tailwind',
         'tailwind.config.ts': 'vscode-icons:file-type-tailwind',
+        'vscode': 'vscode-icons:file-type-vscode',
         'vue': 'vscode-icons:file-type-vue',
         'ts': 'vscode-icons:file-type-typescript',
         'tsx': 'vscode-icons:file-type-typescript',

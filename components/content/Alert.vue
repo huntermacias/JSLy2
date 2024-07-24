@@ -1,9 +1,6 @@
 <template>
-  <UiAlert
-    class="[&:not(:first-child)]:mt-5 transition-all"
-    :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-muted/50']"
-    @click="alertClick"
-  >
+  <UiAlert class="[&:not(:first-child)]:mt-5 transition-all"
+    :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-muted/50']" @click="alertClick">
     <Icon v-if="icon && title" :name="icon" size="16" />
     <UiAlertTitle v-if="title" class="font-semibold">
       {{ title }}
