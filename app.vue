@@ -16,6 +16,8 @@ const { themeClass, radius } = useThemes();
 const useIdFunction = () => useId();
 
 useSeoMeta({
+  title: config.value.site.title,
+  ogTitle: config.value.site.ogTitle,
   description: config.value.site.description,
   ogDescription: config.value.site.description,
   ogImage: config.value.site.ogImage,
