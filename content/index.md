@@ -16,7 +16,7 @@ actions:
     to: /getting-started
   - name: GitHub
     variant: outline
-    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt
+    to: https://github.com/huntermacias/
     leftIcon: 'lucide:github'
 ---
 
