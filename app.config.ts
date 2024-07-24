@@ -35,11 +35,7 @@ export default defineAppConfig({
           target: '_self',
         }],
       },
-        // {
-        //   title: 'Use This Template',
-        //   to: '/getting-started/installation',
-        //   target: '_self',
-        // }
+
       ],
       links: [{
         icon: 'lucide:github',
@@ -105,7 +101,7 @@ export default defineAppConfig({
       links: [
         {
           title: 'JSLy',
-          to: 'https://jsly.vercel.app',
+          to: 'https://js-ly2.vercel.app',
           target: '_blank',
         },
         {
