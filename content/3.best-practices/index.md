@@ -1,11 +1,11 @@
 ---
 title: Best Practices
-description: ''
+description: 'Welcome to the Best Practices section of the JSLy documentation portal. This section is dedicated to providing you with the best methodologies, techniques, and patterns for writing high-quality, efficient, and maintainable JavaScript code. Explore the topics below to enhance your coding skills and ensure you are following industry standards.'
 ---
 
 ![Best Practices](https://media.licdn.com/dms/image/D4D12AQE2IKuegtqQ2Q/article-cover_image-shrink_600_2000/0/1693123093189?e=2147483647&v=beta&t=t2Z8vng4C_cc0QH5aEm1RQNvDf6KsWJ15OXq31f-AGE)
 
-Welcome to the **Best Practices** section of the JSLy documentation portal. This section is dedicated to providing you with the best methodologies, techniques, and patterns for writing high-quality, efficient, and maintainable JavaScript code. Explore the topics below to enhance your coding skills and ensure you are following industry standards.
+
 
 ## Topics Covered
 

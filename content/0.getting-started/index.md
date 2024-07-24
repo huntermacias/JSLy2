@@ -1,7 +1,7 @@
 ---
-title: Setting up JavaScript 
+title: Getting Started
 description: Welcome to your journey of mastering JavaScript! This guide will help you get started with the basics and point you towards resources for more advanced topics.
-icon: 'lucide:info'
+icon: simple-icons:javascript
 ---
 
 ## Motivations

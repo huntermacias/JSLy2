@@ -38,12 +38,15 @@ Check out fun and challenging command-line games developed using JavaScript. The
 **Note:** This section is continuously updated with new projects. Stay tuned for the latest additions and improvements.
 ::
 
-::field-group
+
 ### Featured Project Snippets
-::field
-```javascript [canvas-example.js]
+
+::code-group
+```js [canvas-example.js]
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
 ctx.fillStyle = '#FF0000';
 ctx.fillRect(20, 20, 150, 100);
+```
+::
