@@ -37,11 +37,26 @@ export default defineAppConfig({
       },
 
       ],
-      links: [{
-        icon: 'lucide:github',
-        to: 'https://github.com/huntermacias/nextjs-tailwind-template',
-        target: '_blank',
-      }],
+
+      links: [
+        {
+          icon: 'lucide:github',
+          to: 'https://github.com/huntermacias/',
+          target: '_blank',
+        },
+        {
+          icon: 'lucide:twitter',
+          to: 'https://twitter.com/huntermacias_',
+          target: '_blank',
+
+        },
+        {
+          icon: 'lucide:linkedin',
+          to: 'https://www.linkedin.com/in/huntermacias/',
+          target: '_blank',
+        }
+
+      ],
     },
     aside: {
       useLevel: true,
@@ -51,6 +66,7 @@ export default defineAppConfig({
       breadCrumb: true,
       showTitle: true,
       codeCopyToast: true,
+
       codeIcon: {
         'package.json': 'vscode-icons:file-type-node',
         'tsconfig.json': 'vscode-icons:file-type-tsconfig',
