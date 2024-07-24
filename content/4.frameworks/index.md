@@ -1,6 +1,7 @@
 ---
 title: React vs. Next
 description: 'Differences and How to Choose'
+icon: vscode-icons:file-type-bun
 ---
 
 Facebook released React in 2013, and it’s not an exaggeration to say that it took the web development industry by storm and has completely transformed how we build websites and web applications.

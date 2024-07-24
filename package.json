@@ -1,15 +1,15 @@
 {
-  "name": "shadcn-docs-nuxt",
+  "name": "jsly2",
   "type": "module",
   "version": "0.4.1",
-  "author": "Tony Zhang <zhangtianli2006@gmail.com>",
+  "author": "Hunter Macias <huntermacias20@gmail.com>",
   "license": "MIT",
-  "homepage": "https://shadcn-docs.nuxt.dev/",
+  "homepage": "https://js-ly2.vercel.app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZTL-UwU/shadcn-docs-nuxt.git"
+    "url": "git+https://github.com/huntermacias/JSLy2/"
   },
-  "bugs": "https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues",
+  "bugs": "https://github.com/huntermacias/JSLy2/issues",
   "main": "./nuxt.config.ts",
   "files": [
     "app",
