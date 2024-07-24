@@ -1,0 +1,4 @@
+title: 'Prototypes'
+# icon: heroicons-outline:puzzle
+description: 'Learn about JavaScript prototypes, the prototype chain, and prototypal inheritance.'
+order: 9

@@ -1,0 +1,4 @@
+title: Graphs
+# icon: heroicons-outline:chart-pie
+description: 'Graphs are a data structure that consists of a finite set of vertices (nodes) and a set of edges connecting these vertices.'
+order: 6

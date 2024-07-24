@@ -1,0 +1,4 @@
+title: Hash Tables
+# icon: heroicons-outline:document-text
+description: Hash tables are a type of data structure in which the address or the index value of the data element is generated from a hash function. That makes accessing the data faster as the index value behaves as a key for the data value. In other words, a hash table is used to implement an associative array, a structure that can map keys to values.
+order: 4

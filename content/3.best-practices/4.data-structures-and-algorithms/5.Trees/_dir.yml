@@ -1,0 +1,4 @@
+title: Trees
+# icon: heroicons-outline:document-text
+description: Trees are a type of data structure that is used to store data in a hierarchical manner. It is a non-linear data structure compared to arrays, linked lists, stacks, and queues. Trees are used to represent the hierarchical relationship between various information.
+order: 5

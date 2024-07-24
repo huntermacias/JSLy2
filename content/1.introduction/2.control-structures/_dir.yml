@@ -1,0 +1,5 @@
+title: 'Control Structures'
+# icon: heroicons-outline:switch-horizontal
+description: 'Learn about JavaScript control structures such as loops, conditionals, and more.'
+order: 2
+color: '#4A90E2'

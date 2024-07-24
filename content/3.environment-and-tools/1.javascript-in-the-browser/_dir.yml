@@ -1,0 +1,5 @@
+title: 'JavaScript in the Browser'
+# icon: heroicons-outline:globe
+description: 'Learn how to use JavaScript to interact with the browser, manipulate the DOM, handle events, and more.'
+order: 5
+color: '#FFC107'

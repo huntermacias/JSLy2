@@ -1,0 +1,274 @@
+---
+title: Introduction
+---
+
+# JavaScript Patterns and Best Practices
+
+JavaScript is a versatile and powerful language, but with great power comes great responsibility. Writing clean, maintainable, and efficient code is crucial for any serious JavaScript developer. This guide will introduce you to some essential patterns and best practices to help you become a better JavaScript developer.
+
+## Code Organization
+Organizing your code properly makes it easier to read, maintain, and debug. Here are some key points to consider:
+
+## Modules
+Use ES6 modules or CommonJS to organize your code into reusable pieces.
+::code-group
+    ::code-block{label="utils.js" preview}
+    ```js [utils.js] copy
+    // utils.js
+    export function add(a, b) {
+        return a + b;
+    }
+    export function subtract(a, b) {
+        return a - b;
+    }
+    ```
+    ::
+     ::code-block{label="app.js" preview}
+    ```js [app.js] copy
+    // app.js
+    import { add, subtract } from './utils.js';
+
+    console.log(add(2, 3)); // 5
+    console.log(subtract(5, 2)); // 3
+    ```
+    ::
+::
+
+## Folder Structure
+Adopt a meaningful folder structure for your projects.
+
+
+<!-- Tailwind CSS Classes for Project Structure -->
+<div class="project-structure bg-gray-800 text-white p-6 shadow-lg rounded-lg max-w-lg">
+  <div class="folder">
+    <span class="folder-name">project-root</span>
+    <div class="folder-content">
+      <div class="folder">
+        <span class="folder-name">src/</span>
+        <div class="folder-content">
+          <div class="folder">
+            <span class="folder-name">components/</span>
+            <div class="folder-content">
+              <div class="file">Button.js</div>
+            </div>
+          </div>
+          <div class="folder">
+            <span class="folder-name">utils/</span>
+            <div class="folder-content">
+              <div class="file">helpers.js</div>
+            </div>
+          </div>
+          <div class="file">index.js</div>
+          <div class="file">styles.css</div>
+        </div>
+      </div>
+      <div class="folder">
+        <span class="folder-name">tests/</span>
+        <div class="folder-content">
+          <div class="file">Button.test.js</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+## Variable Declarations
+### Use const and let
+Prefer const for constants and let for variables that will be reassigned. Avoid using var as it has function scope and can lead to unexpected behavior.
+
+```js [variable-dec.js] copy
+const MAX_USERS = 100;
+let userCount = 0;
+
+userCount += 1;
+console.log(userCount); // 1
+```
+
+## Functions
+### Function Declarations vs. Expressions
+Use function declarations for named functions and function expressions for anonymous functions or when you need to pass a function as a parameter.
+
+```js [function.js] copy
+// Function Declaration
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Function Expression
+const greet = function(name) {
+    return `Hello, ${name}!`;
+};
+
+// Arrow Function
+const greet = name => `Hello, ${name}!`;
+```
+
+
+## Objects and Classes
+### Object Literals
+Use object literals to create objects concisely.
+
+```js [objects.js] copy
+const user = {
+    name: 'John Doe',
+    age: 30,
+    greet() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+
+user.greet(); // Hello, my name is John Doe
+```
+### Classes
+#### Use ES6 classes to define reusable components.
+
+```js [classes.js] copy
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+const user = new User('John Doe', 30);
+user.greet(); // Hello, my name is John Doe
+```
+
+## Asynchronous Programming
+### Promises
+Use Promises for better asynchronous code management.
+
+```js [async-programming.js] copy
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Data fetched');
+        }, 1000);
+    });
+}
+
+fetchData().then(data => {
+    console.log(data); // Data fetched
+}).catch(error => {
+    console.error(error);
+});
+```
+
+## Async/Await
+Use async/await for cleaner asynchronous code.
+```js [async.js] copy
+async function fetchData() {
+    const data = await fetch('https://api.example.com/data');
+    return data.json();
+}
+
+fetchData().then(data => {
+    console.log(data);
+}).catch(error => {
+    console.error(error);
+});
+```
+
+## Error Handling
+Handle errors gracefully using try/catch blocks.
+```js [err-handling.js] copy
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Fetching data failed:', error);
+    }
+}
+
+fetchData();
+```
+
+
+## Performance Optimization
+### Debouncing and Throttling
+Use debouncing and throttling to limit the rate of function execution.
+
+::code-group
+    ::code-block{label="debounce.js" preview}
+    ```js [debounce.js] copy
+    function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+    ```
+    ::
+    ::code-block{label="throttle.js" preview}
+    ```js [throttle.js] copy
+    function throttle(func, limit) {
+        let inThrottle;
+        return function (...args) {
+            if (!inThrottle) {
+                func.apply(this, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        };
+    }
+    ```
+    ::
+::
+
+## Security Best Practices
+### Avoid `eval()`
+Never use eval() as it allows execution of arbitrary code, leading to security vulnerabilities.
+
+```js [eval.js] copy
+// Avoid this:
+const result = eval('2 + 2');
+```
+
+## Validate User Input
+Always validate and sanitize user inputs to prevent XSS and SQL injection attacks.
+```js [validate-input.js] copy
+function sanitizeInput(input) {
+    const element = document.createElement('div');
+    element.innerText = input;
+    return element.innerHTML;
+}
+```
+
+## Testing
+### Unit Testing
+Write unit tests to ensure your code works as expected.
+```js [testing.js] copy
+const { expect } = require('chai');
+
+describe('add', function() {
+    it('should add two numbers correctly', function() {
+        expect(add(2, 3)).to.equal(5);
+    });
+});
+```
+
+## Documentation
+Document your code using JSDoc or similar tools to improve maintainability and readability.
+
+```js [document.js] copy
+/**
+ * Adds two numbers.
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} The sum of the two numbers.
+ */
+function add(a, b) {
+    return a + b;
+}
+```

@@ -1,0 +1,5 @@
+title: 'JavaScript and Network'
+# icon: heroicons-outline:cloud
+description: 'Understand how JavaScript interacts with network resources, including HTTP requests, WebSockets, and more.'
+order: 6
+color: '#009688'
