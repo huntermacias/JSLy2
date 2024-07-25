@@ -4,8 +4,11 @@ const defaultConfig: DefaultConfig = {
   site: {
     name: 'JSLy',
     description: 'Beautifully designed JavaScript portal built with Nuxt Content. Customizable. Open Source',
-    ogImage: '/hero.png',
+    ogImage: 'https://i.imgur.com/aNVf3mG.png',
+
   },
+
+
   theme: {
     customizable: true,
     color: 'zinc',
