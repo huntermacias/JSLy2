@@ -5,8 +5,8 @@ export default defineAppConfig({
       ogTitle: 'JSLy - The Ultimate JavaScript Docs',
       description: 'Dive into JSLy: Your go-to resource for comprehensive JavaScript tutorials, guides, and interactive learning.',
       ogDescription: 'Discover JSLy: The ultimate hub for JavaScript documentation, featuring in-depth tutorials, real-time search, and user-contributed content.',
-      ogImage: '/hero.png',
-      twitterCard: '/hero.png',
+      ogImage: 'https://i.imgur.com/aNVf3mG.png',
+      twitterCard: 'https://i.imgur.com/aNVf3mG.png',
     },
     theme: {
       customizable: true,
