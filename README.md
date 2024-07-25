@@ -34,5 +34,4 @@ MIT
 [license-href]: https://github.com/ZTL-UwU/shadcn-docs-nuxt/blob/main/LICENSE
 [nuxt-src]: https://img.shields.io/badge/Built%20With%20Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com/
-# JSLy2
-# JSLy2
+
