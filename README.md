@@ -1,35 +1,12 @@
-![Hero](https://github.com/user-attachments/assets/555cfd9b-3461-40ff-b4fa-6df7f2ba44f5)
+![Hero](/public/hero.png)
 
-# shadcn-docs-nuxt
+# JSLy
 
 [![built with nuxt][nuxt-src]][nuxt-href]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-Beautifully designed _Nuxt Content_ template built with _shadcn-vue_. **Customizable. Compatible. Open Source.**
-
-- [Documentation / Demo](https://shadcn-docs.nuxt.dev/)
-
-## Quick Start
-
-1. Create a project with the [starter template](https://github.com/ZTL-UwU/shadcn-docs-nuxt-starter)
-
-  ```bash
-  npx nuxi@latest init -t github:ZTL-UwU/shadcn-docs-nuxt-starter
-  ```
-
-2. Install dependencies
-
-  ```bash
-  npm install
-  ```
-
-3. Start dev server
-
-  ```bash
-  npm run dev
-  ```
 
 ## Contributing
 
