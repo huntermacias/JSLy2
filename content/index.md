@@ -1,6 +1,14 @@
 ---
 title: Home
 navigation: false
+ogImage: 'https://i.imgur.com/aNVf3mG.png'
+description: 'Welcome to the Advanced Concepts section of the JSLy documentation portal. Explore deep JavaScript topics to enhance your skills.'
+ogTitle: 'JSLy Advanced Concepts'
+ogDescription: 'Dive deep into advanced JavaScript concepts and techniques.'
+twitterCard: 'summary_large_image'
+twitterImage: 'https://i.imgur.com/aNVf3mG.png'
+twitterTitle: 'JSLy Advanced Concepts'
+twitterDescription: 'Explore advanced JavaScript topics and enhance your coding skills.'
 ---
 
 
