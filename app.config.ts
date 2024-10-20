@@ -110,6 +110,9 @@ export default defineAppConfig({
         'yml': 'vscode-icons:file-type-yaml',
         'json': 'vscode-icons:file-type-json',
         'Dockerfile': 'vscode-icons:file-type-docker',
+        'powershell': 'vscode-icons:file-type-powershell',
+        'prisma': 'vscode-icons:file-type-prisma',
+
 
       },
     },

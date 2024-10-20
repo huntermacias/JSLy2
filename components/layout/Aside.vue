@@ -2,26 +2,18 @@
   <UiScrollArea orientation="vertical" class="relative overflow-hidden h-full py-6 pr-6 text-sm" type="hover">
     <LayoutHeaderNavMobile v-if="isMobile" class="border-b pb-2 mb-5" />
     <LayoutSearchButton v-if="config.search.inAside" />
+
     <ul v-if="config.aside.useLevel" class="pb-4 border-b mb-1">
       <li v-for="link in navigation" :key="link.id">
-        <NuxtLink
-          :to="link._path"
-          class="px-3 py-2 mb-1 hover:bg-muted rounded-md w-full flex gap-2 transition-all"
-          :class="[
-            path.startsWith(link._path) && 'bg-muted hover:bg-muted font-semibold text-primary',
-          ]"
-        >
-          <Icon
-            v-if="link.icon"
-            :name="link.icon"
-            class="self-center"
-            size="16"
-          />
+        <NuxtLink :to="link._path" class="navigation-link">
+          <Icon v-if="link.icon" :name="link.icon" class="link-icon" size="16" />
           {{ link.title }}
         </NuxtLink>
       </li>
     </ul>
-    <LayoutAsideTree :links="tree" :level="0" class="px-3" :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']" />
+
+    <LayoutAsideTree :links="tree" :level="0" class="px-3"
+      :class="{ 'pt-4': config.aside.useLevel, 'pt-1': !config.aside.useLevel }" />
   </UiScrollArea>
 </template>
 
@@ -45,5 +37,33 @@ const tree = computed(() => {
   return navigation.value;
 });
 
+
 const path = useRoute().path;
 </script>
+
+
+
+<style scoped>
+.navigation-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navigation-link:hover {
+  background-color: var(--color-muted);
+}
+
+.active-link {
+  background-color: var(--color-muted);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.link-icon {
+  margin-right: 0.5rem;
+}
+</style>
